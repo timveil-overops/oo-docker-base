@@ -2,7 +2,7 @@
 
 __*Please note, this is not an official OverOps repository or Docker image*__
 
-This image serves as a base for other [OverOps](http://www.overops.com) related Docker images.  More info can be found on [DockerHub](https://hub.docker.com/r/timveil/oo-docker-base/).
+This image serves as a base for other [OverOps](http://www.overops.com) related Docker images.  More info on this image can be found on [DockerHub](https://hub.docker.com/r/timveil/oo-docker-base/).
 
 
 To build the image run the following command:
