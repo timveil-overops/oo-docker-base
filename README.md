@@ -1,4 +1,4 @@
-# OverOps Docker Base Image
+# OverOps Base Docker Image
 
 __*Please note, this is not an official OverOps repository or Docker image*__
 
