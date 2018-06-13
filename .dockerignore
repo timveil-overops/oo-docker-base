@@ -1,0 +1,4 @@
+*.md
+.idea
+.git
+*.iml
