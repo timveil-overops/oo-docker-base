@@ -1,14 +1,14 @@
 To build the image run the following command:
 ```
-docker build --no-cache -t timveil/overops-base-centos:latest .
+docker build --no-cache -t timveil/oo-docker-base:latest .
 ```
 
 To publish the image run the following command:
 ```
-docker push timveil/overops-base-centos:latest
+docker push timveil/oo-docker-base:latest
 ```
 
 To run the image execute the following command: 
 ```
-docker run -it timveil/overops-base-centos
+docker run -it timveil/oo-docker-base
 ```
