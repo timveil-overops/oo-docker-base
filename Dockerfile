@@ -4,7 +4,7 @@ LABEL maintainer="tjveil@gmail.com"
 
 RUN yum install -y java-1.8.0-openjdk-devel.x86_64 net-tools \
     && yum -y update \
-    && yum clean all
+    && yum clean all \
     && curl \
         -o overops-event-generator.jar \
         -L https://s3.amazonaws.com/overops-event-generator/overops-event-generator-0.0.2-SNAPSHOT.jar
