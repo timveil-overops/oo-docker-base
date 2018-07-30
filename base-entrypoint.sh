@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "executing base-entryppint.sh"
+echo "executing base-entrypoint.sh"
 
 function waitForService() {
 
