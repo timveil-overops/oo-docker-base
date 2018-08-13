@@ -10,17 +10,17 @@ This image serves as a base for other [OverOps](http://www.overops.com) related 
 #### Building the Image
 
 ```bash
-docker build --no-cache -t timveil/oo-docker-base:latest .
+docker build --no-cache -t timveil/oo-docker-base:alpine .
 ```
 
 #### Publishing the Image
 
 ```bash
-docker push timveil/oo-docker-base:latest
+docker push timveil/oo-docker-base:alpine
 ```
 
 #### Running the Image
  
 ```bash
-docker run -it timveil/oo-docker-base
+docker run -it timveil/oo-docker-base:alpine
 ```
