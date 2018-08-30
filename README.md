@@ -22,5 +22,5 @@ docker push timveil/oo-docker-base:latest
 #### Running the Image
  
 ```bash
-docker run -it timveil/oo-docker-base
+docker run -it timveil/oo-docker-base:latest
 ```
