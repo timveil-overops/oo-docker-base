@@ -4,7 +4,15 @@ LABEL maintainer="tjveil@gmail.com"
 
 ARG TIMEZONE=America/New_York
 
-RUN yum install -y java-1.8.0-openjdk-devel.x86_64 net-tools nc less \
+
+# setup OverOps linux requirements
+# * java-1.8.0-openjdk-devel.x86_64 - Java JDK
+# * net-tools - used by OO one liner
+# * nc - used by OO one liner
+# * less - convenience for viewing configuration
+# * sysvinit-tools - used by OO one liner to detect port availability
+
+RUN yum install -y java-1.8.0-openjdk-devel.x86_64 net-tools nc less sysvinit-tools \
     && yum -y update \
     && yum clean all \
     && ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime \
