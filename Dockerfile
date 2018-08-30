@@ -41,8 +41,9 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
 # * bash - used by OO one liner
 # * netcat-openbsd - used by entrypoint.sh
 # * libstdc - required by agent
+# * procps - used by OO one liner to detect port availability
 
-RUN apk add curl bash netcat-openbsd libstdc++ \
+RUN apk add curl bash netcat-openbsd libstdc++ procps \
     && /usr/glibc-compat/sbin/ldconfig \
     && mkdir /opt
 
