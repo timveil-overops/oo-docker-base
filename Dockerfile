@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM openjdk:8-jdk-alpine
 
 LABEL maintainer="tjveil@gmail.com"
 
