@@ -7,8 +7,9 @@ LABEL maintainer="tjveil@gmail.com"
 # * bash - used by OO one liner
 # * netcat-openbsd - used by entrypoint.sh
 # * libstdc - required by agent
+# * git - used to show source code
 
-RUN apk add curl bash netcat-openbsd libstdc++ \
+RUN apk add curl bash netcat-openbsd libstdc++ git \
     && mkdir /opt
 
 # entrypoint for docker files, adds wait method useful for docker-compose
