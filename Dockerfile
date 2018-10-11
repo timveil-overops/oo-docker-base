@@ -87,8 +87,9 @@ RUN apk del build-dependencies \
 # * netcat-openbsd - used by entrypoint.sh
 # * libstdc - required by agent
 # * procps - used by OO one liner to detect port availability
+# * git - used to show source code
 
-RUN apk add curl bash netcat-openbsd libstdc++ procps \
+RUN apk add curl bash netcat-openbsd libstdc++ procps git \
     && /usr/glibc-compat/sbin/ldconfig \
     && mkdir /opt
 
