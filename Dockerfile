@@ -9,7 +9,7 @@ LABEL maintainer="tjveil@gmail.com"
 # * libstdc - required by agent
 # * git - used to show source code
 
-RUN apk add curl bash netcat-openbsd libstdc++ git \
+RUN apk add curl bash netcat-openbsd libstdc++ \
     && mkdir /opt
 
 # entrypoint for docker files, adds wait method useful for docker-compose
