@@ -12,7 +12,7 @@ ARG TIMEZONE=America/New_York
 # * less - convenience for viewing configuration
 # * sysvinit-tools - used by OO one liner to detect port availability
 
-RUN yum install -y java-1.8.0-openjdk-devel.x86_64 net-tools nc less sysvinit-tools \
+RUN yum install -y java-1.8.0-openjdk-devel.x86_64 net-tools nc less sysvinit-tools git \
     && yum -y update \
     && yum clean all \
     && ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime \
